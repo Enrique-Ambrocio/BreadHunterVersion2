@@ -1,0 +1,19 @@
+.default-viewing {
+    background-color: rgb(80, 112, 255);
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1rem;
+    margin: .1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    border-radius: .25em;
+    padding: .6rem .1rem;
+}
+
+.default-viewing:hover {
+    cursor: pointer;
+    background-color: rgb(123, 147, 254);
+}

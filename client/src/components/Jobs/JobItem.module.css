@@ -1,0 +1,46 @@
+.job-item {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.job-item_title {
+    width: 8rem;
+    text-align: center;
+}
+
+.job-item_description {
+    width: 8rem;
+    text-align: center;
+
+}
+
+.job-item_button {
+    background-color: aquamarine;
+    border-radius: 1em;
+    padding: 0.6rem 0.5rem;
+}
+
+.job-item_button:hover {
+    background-color: rgb(197, 255, 236);
+}
+
+.link-text {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.job-item-button_delete button {
+    background-color: rgb(231, 231, 231);
+    border: none;
+}
+
+.job-item-button_delete button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,55 @@
+.note-input {
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 35rem;
+}
+
+.note-input button {
+    text-decoration: none;
+    border-radius: 10em;
+    text-align: center;
+    width: 8rem;
+    padding: .6rem .5rem;
+    font-weight: 600;
+    color: black;
+    font-size: medium;
+    background-color: aquamarine;
+    border: none;
+}
+
+.note-input button:hover {
+    background-color: rgb(197, 255, 236);
+    cursor: pointer;
+}
+
+
+.note-input form {
+    width: 100%;
+}
+
+.note-input_input input {
+    width: 100%;
+    border: 3px solid rgb(179, 179, 179);
+    border-radius: 1rem;
+    font-size: medium;
+    text-align: start;
+    padding-left: .5rem;
+    padding-top: .5rem;
+    padding-bottom: 5rem;
+    overflow-wrap: break-word;
+}
+
+.note-input_input input:focus {
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.note-input_buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

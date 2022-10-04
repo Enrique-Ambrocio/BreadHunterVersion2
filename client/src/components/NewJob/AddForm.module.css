@@ -1,0 +1,7 @@
+.job-form-container {
+    background-color: rgb(231, 231, 231);
+    width: 75%;
+    margin: 5rem auto;
+    max-width: 35rem;
+    border-radius: 1rem;
+}

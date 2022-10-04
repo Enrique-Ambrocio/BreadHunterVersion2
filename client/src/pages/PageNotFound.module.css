@@ -1,0 +1,15 @@
+.page-not-found {
+    max-width: 20rem;
+    width: 15%;
+    margin: 10rem auto;
+}
+
+.page-not-found p {
+    font-size: larger;
+    text-align: center;
+}
+
+.page-not-found h2 {
+    font-size: xx-large;
+    text-align: center;
+}

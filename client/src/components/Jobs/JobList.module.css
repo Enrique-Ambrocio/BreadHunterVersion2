@@ -1,0 +1,36 @@
+.job-list {
+    list-style: none;
+    padding: 0.3rem;
+    width: 55%;
+    margin: 5rem auto;
+    max-width: 65rem;
+}
+
+.no-job {
+    margin: 8rem auto;
+    width: 35%;
+    max-width: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.no-job h2 {
+    text-align: center;
+}
+
+.no-job_button {
+    background-color: aquamarine;
+    text-decoration: none;
+    border-radius: 10em;
+    text-align: center;
+    width: 8rem;
+    margin: .2rem auto;
+    padding: 1rem;
+    font-weight: 600;
+    color: black;
+    font-size: medium;
+}
+
+.no-job_button:hover {
+    background-color: rgb(197, 255, 236);
+}

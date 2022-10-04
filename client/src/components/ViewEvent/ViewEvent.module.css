@@ -1,0 +1,33 @@
+.event-description_container {
+    margin-top: 2.5rem;
+}
+
+.event-description_icons {
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    width: 15%;
+    margin-left: 78%;
+    top: 5%;
+}
+
+.event-description_title {
+    display: flex;
+    align-items: center;
+    width: 55%;
+    justify-content: space-evenly;
+}
+
+.event-description_date {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+.event-description_description {
+    display: flex;
+}
+
+.event-description_description span {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

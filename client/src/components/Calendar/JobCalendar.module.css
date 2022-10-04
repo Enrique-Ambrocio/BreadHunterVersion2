@@ -1,0 +1,21 @@
+.calendar-container {
+    background-color: rgba(87, 179, 255, 0.787);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    margin-left: 25%;
+}
+
+.calendar-container span:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    font-weight: bolder;
+    align-items: center;
+    color: white;
+}

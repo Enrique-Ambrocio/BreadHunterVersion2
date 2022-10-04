@@ -1,0 +1,25 @@
+.note-item {
+    list-style: none;
+    background-color: blanchedalmond;
+    padding: .75rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.note-item_button {
+    width: 5rem;
+    margin-top: 1.5rem;
+}
+
+.note-item_button button {
+    background-color: blanchedalmond;
+    border: none;
+}
+
+.note-item_button button:hover {
+    cursor: pointer;
+}
+
+.note-item_button svg {
+    background-color: blanchedalmond;
+}

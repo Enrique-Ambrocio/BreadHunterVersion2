@@ -1,0 +1,18 @@
+.calendar-days {
+    display: flex;
+    width: 75%;
+    margin-left: 25%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .01rem;
+}
+
+.calendar-days li {
+    list-style: none;
+    border: .1rem solid rgb(228, 228, 228);
+    width: 15%;
+    border-bottom: none;
+    font-weight: bolder;
+}

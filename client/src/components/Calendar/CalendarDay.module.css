@@ -1,0 +1,16 @@
+.calendar-item {
+    margin: .0005rem;
+    width: 13%;
+    height: 6.10rem;
+    border: .1rem solid rgb(241, 240, 240);
+}
+
+.calendar-item span:hover {
+    cursor: pointer;
+}
+
+.calendar-list {
+    padding: .01rem;
+    width: 90%;
+
+}

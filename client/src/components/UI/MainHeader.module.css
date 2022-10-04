@@ -1,0 +1,30 @@
+.header {
+    background-color: aquamarine;
+    height: 5rem;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav li {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.main-nav a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    border-bottom: 3px solid black;
+}

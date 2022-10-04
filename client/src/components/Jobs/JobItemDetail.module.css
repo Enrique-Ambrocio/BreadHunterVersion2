@@ -1,0 +1,18 @@
+.job-details {
+    background-color: rgb(246, 253, 115);
+    width: 75%;
+    margin: 0rem auto;
+    margin-left: 25%;
+}
+
+.job-details_title {
+    text-align: center;
+    padding-top: .05rem;
+}
+
+.job-details_description {
+    text-align: center;
+    background-color: beige;
+    padding-top: .1rem;
+    padding-bottom: .75rem;
+}
