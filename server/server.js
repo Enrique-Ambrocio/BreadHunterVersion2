@@ -21,13 +21,17 @@ app.use(express.json());
 // Middleware that will parse all bodies coming from a form. Package wil also automatically call next
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// Middleware that allows read access to the public folder. 
-app.use(express.static(path.join(__dirname, 'public')))
+// Middleware that allows read access to the build folder. 
+app.use(express.static(path.join(__dirname, './client/build')))
 
 // Routes 
 app.use(addJobRoutes)
 app.use(jobRoutes)
 app.use(jobDetailsRoutes)
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './client/build/index.html'))
+})
 
 // Starts a server and will listen to port 3000 for connections and will initaite the data base connection.
 app.listen(port, () => {
