@@ -13,7 +13,6 @@ const addJobRoutes = require('./routes/addJob')
 const jobRoutes = require('./routes/jobs')
 const jobDetailsRoutes = require('./routes/jobDetails')
 
-
 app.use(cors());
 
 // Middleware that will be used to read JSON payload from post requests
