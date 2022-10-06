@@ -26,7 +26,7 @@ React version: 18.2.0
 <ul>
     <li>react-icons@4.4.0</li>
     <li>react-router-dom@6.3.0</li>
-    <li>body-parser@^1.20.0",
+    <li>body-parser@^1.20.0</li>
     <li>cors@2.8.5</li>
     <li>dotenv@16.0.3</li>
     <li>express@4.18.1</li>
