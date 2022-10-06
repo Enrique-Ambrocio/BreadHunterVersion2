@@ -1,7 +1,5 @@
 const express = require('express')
-const { MongoDriverError } = require('mongodb')
 const router = express.Router()
-const path = require('path')
 const { getJobs, deleteJob } = require('../controller/jobs')
 
 
