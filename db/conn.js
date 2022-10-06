@@ -1,4 +1,5 @@
 const { MongoClient } = require('mongodb')
+require('dotenv').config()
 const Db = process.env.ATLAS_URI;
 
 // creating an instance (object) of MongoClient. Additional options passsed are for DeprecationWarnings

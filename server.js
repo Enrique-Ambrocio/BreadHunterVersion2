@@ -5,7 +5,7 @@ require("dotenv").config({ path: "./config.env" });
 const dbo = require('./db/conn')
 const bodyParser = require('body-parser')
 const path = require('path')
-require('dotenv').config({ path: '.config.env' })
+require('dotenv').config()
 const port = process.env.PORT || 3002
 
 // imported router objects
