@@ -2,7 +2,7 @@
 
 <h2>BreadHunter</h2>
 
-A react application that helps users track jobs they've applied to (added via a form). Each job contains a calendar where users are able to add and delete calendar events. Users can also navigate away from the calendar and into the details page, which gives you access to the details of the job (which were added via the form).
+A MERN CRUD app that helps users track jobs they've applied to (added via a form). Each job contains a calendar where users are able to add and delete calendar events. Users can also navigate away from the calendar and into the details page, which gives you access to the details of the job (which were added via the form).
 
 <h2>Technologies used</h2>
 
