@@ -53,7 +53,8 @@ export async function getAllNotes(requestData) {
             if (data[key].events[eventKey].eventId === requestData.eventId) {
                 const obj = {
                     title: data[key].events[eventKey].title,
-                    description: data[key].events[eventKey].description
+                    description: data[key].events[eventKey].description,
+                    time: data[key].events[eventKey].time
                 };
                 transformedComments.push(obj)
             }

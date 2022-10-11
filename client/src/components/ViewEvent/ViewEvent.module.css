@@ -11,6 +11,10 @@
     top: 5%;
 }
 
+.event-description_icons:hover {
+    cursor: pointer;
+}
+
 .event-description_title {
     display: flex;
     align-items: center;

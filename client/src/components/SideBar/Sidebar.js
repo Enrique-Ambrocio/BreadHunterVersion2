@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Sidebar.module.css'
 import { AiTwotoneCalendar } from 'react-icons/ai'
 import { BsCardText } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 function Sidebar(props) {
 
@@ -17,12 +18,12 @@ function Sidebar(props) {
         <div className={styles['sidebar-container']}>
             <div onClick={isViewingCalendar} className={styles['menu-items']}>
                 <AiTwotoneCalendar />
-                <p>Calendar</p>
+                <Link to="calendar">Calendar</Link>
             </div>
-            {/* <div onClick={isNotViewingCalendar} className={styles['menu-items']}>
+            <div onClick={isNotViewingCalendar} className={styles['menu-items']}>
                 <BsCardText />
-                <p>Job Details</p>
-            </div> */}
+                <Link to="details">Job Details</Link>
+            </div>
         </div>
     )
 }

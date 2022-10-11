@@ -30,6 +30,7 @@ function ViewEvent(props) {
                 </div>
                 <div className={styles['event-description_date']}>
                     <h5>{props.date2}</h5>
+                    <h5>{props.time}</h5>
                 </div>
                 <div className={styles['event-description_description']}>
                     <span><RiCalendarEventFill /></span>

@@ -22,6 +22,7 @@ function CalendarDayEvent(props) {
                 description={props.description}
                 id={props.id}
                 deleteHandler={props.deleteHandler1}
+                time={props.time}
                 date={props.date}
                 date2={props.date2}
                 isViewing={isViewingHandler}
