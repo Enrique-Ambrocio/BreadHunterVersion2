@@ -16,7 +16,7 @@ function JobItem(props) {
                 <div>{props.title}</div>
             </div>
             <div className={styles['job-item_button']}>
-                <Link className={styles['link-text']} to={`/job-details/${props.id}/calendar`}>Details
+                <Link className={styles['link-text']} to={`/job-details/${props.id}`}>Details
                 </Link>
             </div>
             <div className={styles['job-item-button_delete']}>

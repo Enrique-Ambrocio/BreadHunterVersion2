@@ -1,7 +1,6 @@
 import React from 'react'
 import Modal2 from '../UI/Modal2'
 import styles from './ViewEvent.module.css'
-import { RiDeleteBin6Line } from 'react-icons/ri'
 import { MdOutlineCancel } from 'react-icons/md'
 import { RiCalendarEventFill } from 'react-icons/ri'
 import { FcDownRight } from 'react-icons/fc'

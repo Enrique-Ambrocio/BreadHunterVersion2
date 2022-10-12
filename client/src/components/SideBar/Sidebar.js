@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment, useState } from 'react'
 import styles from './Sidebar.module.css'
 import { AiTwotoneCalendar } from 'react-icons/ai'
 import { BsCardText } from 'react-icons/bs'
@@ -6,21 +6,21 @@ import { Link } from 'react-router-dom'
 
 function Sidebar(props) {
 
-    function isViewingCalendar() {
-        props.onViewingCalendar(true)
+    const isViewingCalendar = () => {
+        props.toggleCalendarHandler(true)
     }
 
-    function isNotViewingCalendar() {
-        props.onViewingCalendar(false)
+    const isViewingDetails = () => {
+        props.toggleCalendarHandler(false)
     }
 
     return (
         <div className={styles['sidebar-container']}>
-            <div onClick={isViewingCalendar} className={styles['menu-items']}>
+            <div className={styles['menu-items']} onClick={isViewingCalendar}>
                 <AiTwotoneCalendar />
-                <Link to="calendar">Calendar</Link>
+                <Link to="">Calendar</Link>
             </div>
-            <div onClick={isNotViewingCalendar} className={styles['menu-items']}>
+            <div className={styles['menu-items']} onClick={isViewingDetails}>
                 <BsCardText />
                 <Link to="details">Job Details</Link>
             </div>

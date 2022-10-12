@@ -1,3 +1,14 @@
+export async function getJobDetails(requestData) {
+    const response = await fetch(`http://localhost:3002/job-details/${requestData.eventId}/details`);
+    console.log(response)
+    const data = await response.json()
+    if (!response.ok) {
+        throw new Error(data.message || 'Could not get job details')
+    }
+    console.log(data)
+    return data
+}
+
 export async function deleteNote(requestData) {
     const response = await fetch(`http://localhost:3002/job-details/${requestData.eventId}`, {
         method: 'DELETE'
@@ -60,6 +71,5 @@ export async function getAllNotes(requestData) {
             }
         }
     }
-    console.log(transformedComments)
     return transformedComments
 }

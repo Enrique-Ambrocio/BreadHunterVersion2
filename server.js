@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-require("dotenv").config({ path: "./config.env" });
 const dbo = require('./db/conn')
 const bodyParser = require('body-parser')
 const path = require('path')
@@ -12,6 +11,7 @@ const port = process.env.PORT || 3002
 const addJobRoutes = require('./routes/addJob')
 const jobRoutes = require('./routes/jobs')
 const jobDetailsRoutes = require('./routes/jobDetails')
+const jobDetails2Routes = require('./routes/jobDetails2')
 
 app.use(cors());
 
@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, './client/build')))
 app.use(addJobRoutes)
 app.use(jobRoutes)
 app.use(jobDetailsRoutes)
+app.use(jobDetails2Routes)
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './client/build/index.html'))

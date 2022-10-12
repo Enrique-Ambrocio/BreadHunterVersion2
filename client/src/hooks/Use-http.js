@@ -19,8 +19,8 @@ const useHttp = (applyData) => {
             if (!response.ok) {
                 throw new Error(`This is an HTTP error: The status is ${response.status}`);
             }
-
             const data = await response.json();
+            console.log(data)
             applyData(data)
 
         } catch (error) {

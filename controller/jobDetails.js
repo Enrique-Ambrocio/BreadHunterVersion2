@@ -4,6 +4,7 @@ const Event = require('../models/addEvent')
 
 exports.getJobDetails = (req, res, next) => {
     const db = getDb()
+    console.log(req)
     let myQuery = { _id: ObejectId(req.params.id) }
     db.collection('jobs').findOne(myQuery)
         .then(result => {
