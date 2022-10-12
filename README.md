@@ -24,12 +24,14 @@ React version: 18.2.0
 
 <h2>Dependecies</h2>
 <ul>
-    <li>react-dom: ^18.2.0</li>
-    <li>react-icons: ^4.4.0</li>
-    <li>react-router-dom: ^6.3.0</li>
-    <li>react-scripts: 5.0.1</li>
+    <li>react-icons@4.4.0</li>
+    <li>react-router-dom@6.3.0</li>
+    <li>body-parser@^1.20.0</li>
+    <li>cors@2.8.5</li>
+    <li>dotenv@16.0.3</li>
+    <li>express@4.18.1</li>
+    <li>mongodb@4.10.0</li>
 </ul>
-
 
 <h2>Project Status</h2>
 
