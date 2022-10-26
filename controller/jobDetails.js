@@ -1,6 +1,6 @@
 const getDb = require('../db/conn').getDB
 const ObejectId = require('mongodb').ObjectId
-const Event = require('../models/addEvent')
+const Event = require('../models/Event')
 
 exports.getJobDetails = (req, res, next) => {
     const db = getDb()
@@ -43,5 +43,8 @@ exports.postCalendarEvent = (req, res, next) => {
 }
 
 exports.deletePostCalendarDetails = (req, res, next) => {
-    console.log(req.params.id)
+    Event.deleteEvent(req.params.id, req.params.EventId)
+        .then(result =>
+            res.json(result))
+        .catch(err => console.log(err))
 }

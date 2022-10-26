@@ -10,6 +10,7 @@ module.exports = class Event {
         this.description = description
         this.eventId = eventId
         this.dayId = dayID
+        this._id = new ObejectId
     }
 
     save() {
@@ -35,4 +36,14 @@ module.exports = class Event {
             })
             .catch(err => console.log(err))
     }
+
+    static deleteEvent(dayId, eventId) {
+        const db = getDb();
+        return db.collection('jobs').updateOne({ _id: ObejectId(dayId) },
+            { $pull: { events: { _id: ObjectId(eventId) } } }
+        ).then(result => {
+            return result
+        }).catch(err => console.log(err))
+    }
+
 }

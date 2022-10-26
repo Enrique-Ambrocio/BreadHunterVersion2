@@ -34,7 +34,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, './client/build/index.html'))
 })
 
-// Starts a server and will listen to port 3000 for connections and will initaite the data base connection.
+// Starts a server and will listen to port 3002 for connections and will initaite the data base connection.
 app.listen(port, () => {
     dbo.connectToServer((client) => {
         console.log(client)

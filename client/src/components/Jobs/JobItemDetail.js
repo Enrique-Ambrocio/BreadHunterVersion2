@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useEffect, useState } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import LoadingSpinner from '../UI/LoadingSpinner';
 import styles from './JobItemDetail.module.css'
 import { getJobDetails } from '../../lib/api';
@@ -7,22 +7,7 @@ import useHttp1 from '../../hooks/use-http1';
 
 function JobItemDetail(props) {
 
-    // const [details, setDetails] = useState([])
-
-    // const transformDetails = useCallback((taskObj) => {
-    //     setDetails(taskObj)
-    // }, [])
-
-    // console.log(details)
-
-    // const { isLoading, error, sendRequest: fetchDetails } = useHttp(transformDetails);
-
-    // useEffect(() => {
-    //     fetchDetails({ url: `http://localhost:3002/job-details/${Id}/details` })
-    // }, [fetchDetails, Id])
-
     const { sendRequest, status, data, error } = useHttp1(getJobDetails)
-    console.log(props.Id)
 
     // ------------------  Fetch Notes
 

@@ -10,6 +10,6 @@ router.get('/job-details/:id', getCalendarEvents)
 
 router.post('/job-details/:id', postCalendarEvent)
 
-router.delete('/job-details/:id', deletePostCalendarDetails)
+router.delete('/job-details/:id/:EventId', deletePostCalendarDetails)
 
 module.exports = router

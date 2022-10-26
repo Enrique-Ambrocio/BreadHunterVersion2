@@ -2,7 +2,7 @@ import React from 'react'
 import Modal2 from '../UI/Modal2'
 import styles from './ViewEvent.module.css'
 import { MdOutlineCancel } from 'react-icons/md'
-import { RiCalendarEventFill } from 'react-icons/ri'
+import { RiCalendarEventFill, RiDeleteBin6Line } from 'react-icons/ri'
 import { FcDownRight } from 'react-icons/fc'
 
 function ViewEvent(props) {
@@ -16,11 +16,10 @@ function ViewEvent(props) {
     }
 
     return (
-
         <Modal2>
             <div className={styles['event-description_container']}>
                 <div className={styles['event-description_icons']}>
-                    {/* <RiDeleteBin6Line onClick={deleteEventHandler} /> */}
+                    <RiDeleteBin6Line onClick={deleteEventHandler} />
                     <MdOutlineCancel onClick={stopIsViewingHandler} />
                 </div>
                 <div className={styles['event-description_title']}>

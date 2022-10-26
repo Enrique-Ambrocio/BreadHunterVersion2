@@ -61,6 +61,7 @@ function CalendarDate(props) {
 
 
     const deleteEvent = async (eventId) => {
+        console.log(eventId)
         sendRequest3({ Id: props.jobId, eventId: props.id, calendarEventId: eventId })
     }
 
@@ -77,13 +78,13 @@ function CalendarDate(props) {
     if (status === 'completed' && Event) {
         event = <ul className={styles['calendar-list']}>
             {Event.map((event) =>
-                <CalendarDayEvent
+                < CalendarDayEvent
                     date2={props.eventDate}
                     title={event.title}
                     time={event.time}
                     description={event.description}
-                    key={event.id}
-                    id={event.id}
+                    key={event.key}
+                    id={event.key}
                     date={props.id}
                     deleteHandler1={deleteEvent}
                 />

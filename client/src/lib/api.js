@@ -10,7 +10,7 @@ export async function getJobDetails(requestData) {
 }
 
 export async function deleteNote(requestData) {
-    const response = await fetch(`http://localhost:3002/job-details/${requestData.eventId}`, {
+    const response = await fetch(`http://localhost:3002/job-details/${requestData.Id}/${requestData.calendarEventId}`, {
         method: 'DELETE'
     });
     const data = await response.json();
@@ -51,12 +51,9 @@ export async function addNote(requestData) {
 export async function getAllNotes(requestData) {
     const response = await fetch(`http://localhost:3002/job-details/${requestData.Id}`);
     const data = await response.json();
-    console.log(data)
     if (!response.ok) {
         throw new Error(data.message || 'Could not get comments.');
     }
-
-    console.log(data[0].events)
 
     const transformedComments = [];
     for (const key in data) {
@@ -65,7 +62,8 @@ export async function getAllNotes(requestData) {
                 const obj = {
                     title: data[key].events[eventKey].title,
                     description: data[key].events[eventKey].description,
-                    time: data[key].events[eventKey].time
+                    time: data[key].events[eventKey].time,
+                    key: data[key].events[eventKey]._id
                 };
                 transformedComments.push(obj)
             }
